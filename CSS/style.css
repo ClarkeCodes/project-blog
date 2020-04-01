@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+    "top top"
+    "main main"
+    "ft ft";
+    justify-content: center;
+
+    /* TODO: remove */
+    border: 3px solid red;
+}
+
+.box {
+     /* TODO: remove */
+    border: 2px solid purple;
+}
+
+header {
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "post-top"
+    "post-middle";
+}
+
+#post-1 {
+    grid-area: post-top;
+}
+
+#post-2 {
+    grid-area: post-middle;
+}
+
+footer {
+    grid-area: ft;
+}
+
+.blog-img {
+    width: 400px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
