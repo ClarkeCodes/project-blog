@@ -1,9 +1,12 @@
+@import url(blog-post.css);
+
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 100px 50px 1fr 50px;
     grid-template-areas: 
-    "top top"
+    "hd hd"
+    "nav nav"
     "main main"
     "ft ft";
     justify-content: center;
@@ -18,11 +21,20 @@
 }
 
 header {
-    grid-area: top;
+    grid-area: hd;
     display: flex;
     justify-content: center;
 }
 
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: ft;
+}
+
+/* blog posts/content layout */
 #main {
     grid-area: main;
     display: grid;
@@ -41,10 +53,6 @@ header {
     grid-area: post-middle;
 }
 
-footer {
-    grid-area: ft;
-}
-
 .blog-img {
     width: 400px;
 }
@@ -53,4 +61,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* responsive layout */
+@media(min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px 1fr 50px;
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd"
+            "main main main main main main nav nav"
+            "ft ft ft ft ft ft ft ft";
+    }
+      
 }
