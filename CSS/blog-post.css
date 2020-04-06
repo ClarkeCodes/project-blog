@@ -7,7 +7,7 @@
 .blog-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 1fr 50px 100px 50px;
+    grid-template-rows: 100px 50px 1fr 50px 150px 50px;
     grid-template-areas: 
         "hd hd"
         "nav nav"
@@ -27,6 +27,26 @@ article.blog-post {
 
 #bio {
     grid-area: bio;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .bio-image {
+    max-width: 30%;
+
+}
+
+#bio-icon {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+} */
+
+.bio-icon {
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(../img/icon-eline.jpg);
+    background-size: contain;
 }
 
 /* responsive layout */
