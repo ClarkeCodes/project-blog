@@ -1,6 +1,14 @@
 @import url(blog-post.css);
 @import url(typography.css);
 
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,20 +19,19 @@
     "main main"
     "ft ft";
     justify-content: center;
-
-    /* TODO: remove */
-    /* border: 3px solid red; */
 }
 
-.box {
+/* .box { */
      /* TODO: remove */
     /* border: 2px solid purple; */
-}
+/* } */
 
 header {
     grid-area: hd;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
 
 nav {
@@ -33,6 +40,7 @@ nav {
 
 footer {
     grid-area: ft;
+    text-align: center;
 }
 
 /* blog posts/content layout */
@@ -64,15 +72,46 @@ footer {
     align-items: center;
     padding: 1rem;
     margin: 3rem;
-    border: 1px solid lightgray;
-    border-radius: 3%;
+    box-shadow: 2px 2px 6px grey;
+    background: white;
+    border-radius: 1%;
 }
+
+/* .blog-card:hover {
+    border: 1px solid lightgray;
+} */
 
 .blog-title-lg,
 .blog-date-lg {
     display: none;
 }
 
+.button {
+    padding: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #a0a;
+    border: 1px solid #a0a;
+    border-radius: 8px;
+    font-size: 0.7em;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 2px #66D7D1;
+    padding-right: 10px;
+}
+
+.button::after {
+    content: " \2192";
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+
+.button:hover::after {
+    opacity: 1;
+}
 /* responsive layout */
 @media(min-width: 900px) {
     .container {
