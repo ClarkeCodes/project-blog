@@ -28,12 +28,23 @@ header {
     align-items: center;
 }
 
+.header-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    border: 1px solid #aa00aa;
+    padding: 1rem;
+    color: #a0a;
+}
+
 nav {
     grid-area: nav;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin: 1rem;
 }
 
 footer {
@@ -87,11 +98,6 @@ footer {
     border: 1px solid lightgray;
 } */
 
-/* .blog-title-lg,
-.blog-date-lg {
-    display: none;
-} */
-
 .button {
     padding: 6px;
     font-weight: bold;
@@ -139,16 +145,6 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
     }
-
-    .blog-title-lg,
-    .blog-date-lg {
-        display: block;
-    }
-
-    .blog-title-sm,
-    .blog-date-sm {
-        display: none;
-    }      
 
     .blog-card {
         flex-direction: row;
