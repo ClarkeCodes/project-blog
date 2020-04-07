@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 5%;
+}
+
+.blog-post-img {
+    width: 80%;
 }
 
 .blog-container {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 1fr 50px 150px 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 50px 1fr 50px min-content 50px;
     grid-template-areas: 
         "hd hd"
         "nav nav"
@@ -29,25 +34,34 @@ article.blog-post {
     grid-area: bio;
     display: flex;
     flex-direction: row;
+    max-width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
 }
 
-/* .bio-image {
+.bio-image-container {
+    margin: auto 0;
     max-width: 30%;
+}
 
+.bio-description {
+    max-width: 65%;
 }
 
 #bio-icon {
+    width: 100%;
     border-radius: 50%;
-    height: 100%;
-    width: auto;
-} */
+    border: 6px solid #2196f380;
+}
 
-.bio-icon {
+
+
+/* .bio-icon {
     width: 75px;
     border-radius: 50%;
     background-image: url(../img/icon-eline.jpg);
     background-size: contain;
-}
+} */
 
 /* responsive layout */
 
@@ -61,5 +75,23 @@ article.blog-post {
             "main main main main main main bio bio"
             "share share share share share share bio bio"
             "ft ft ft ft ft ft ft ft";
+    }
+
+    #bio {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #bio-icon {
+        max-width: 80%;
+    }
+
+    .bio-image-container {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .bio-description {
+        max-width: 100%;
     }
 }
