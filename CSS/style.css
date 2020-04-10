@@ -9,6 +9,12 @@ body {
 
 a {
     text-decoration: none;
+    color: #0F0F0F;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a0a;
 }
 
 .container {
@@ -158,10 +164,24 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        border: none;
+        margin: 2rem 0;
+    }
+
+    .nav-hide {
+        display: none;
     }
 
     .nav-sidebar {
         display: block;
+    }
+
+    .sidebar-header  {
+        border-bottom: 1px solid;
+    }
+
+    .sidebar-list-item {
+        border-bottom: 1px dotted grey;
     }
 
     .blog-card {
