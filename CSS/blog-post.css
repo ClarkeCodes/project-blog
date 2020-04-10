@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 5%;
+    padding: 1rem;
     box-shadow: 2px 2px 6px grey;
     margin: 1rem;
 }
@@ -14,18 +14,24 @@
 .blog-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 50px 1fr 50px min-content 50px;
+    grid-template-rows: 100px 50px 1fr min-content min-content 50px;
     grid-template-areas: 
         "hd hd"
         "nav nav"
         "main main"
-        "share share"
         "bio bio"
+        "share share"
         "ft ft";
 }
 
 article {
     grid-area: main;
+}
+
+blockquote {
+    border-left: 2px solid #2196f380;
+    padding: 0.5rem;
+    font-size: 1.1em;
 }
 
 .blog-post {
@@ -38,6 +44,25 @@ article {
 
 #share {
     grid-area: share;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    height: 100%;
+    width: auto;
+    padding: 0.5rem;
+    filter: opacity(0.6);
+    transition: filter 0.5s;
+}
+
+.social-link {
+    margin: 1rem;
+}
+
+.social-icon:hover {
+    filter: opacity(1);
 }
 
 #bio {
@@ -64,27 +89,22 @@ article {
     border: 6px solid #2196f380;
 }
 
-
-
-/* .bio-icon {
-    width: 75px;
-    border-radius: 50%;
-    background-image: url(../img/icon-eline.jpg);
-    background-size: contain;
-} */
-
 /* responsive layout */
-
 @media(min-width: 900px) {
     .blog-container {
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 100px, 1fr, 1fr, 50px, 50px;
+        grid-template-rows: 100px, 1fr, 1fr, min-content, 50px;
         grid-template-areas: 
             "hd hd hd hd hd hd hd hd"
             "main main main main main main nav nav"
             "main main main main main main bio bio"
-            "share share share share share share bio bio"
+            "share share share share share share share share"
             "ft ft ft ft ft ft ft ft";
+    }
+
+    blockquote {
+        padding: 1rem;
+        font-size: 1.2em;
     }
 
     #bio {
@@ -103,5 +123,10 @@ article {
 
     .bio-description {
         max-width: 100%;
+    }
+
+    .blog-post {
+        margin: 2rem;
+        padding: 2rem;
     }
 }

@@ -4,6 +4,7 @@
 body {
     margin: 0;
     background: #f0f0f0;
+    color: #0F0F0F;
 }
 
 a {
@@ -27,14 +28,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .header-title {
     text-transform: uppercase;
     font-weight: lighter;
-    border: 1px solid #aa00aa;
-    padding: 1rem;
-    color: #a0a;
+    /* border: 1px solid #aa00aa; */
+    /* padding: 1rem; */
+    /* color: #a0a; */
+}
+
+.header-subtitle {
+    font-weight: lighter;
+    font-size: 1.2em;
 }
 
 nav {
@@ -132,17 +139,6 @@ footer {
     /* padding-right: 10px; */
 }
 
-.button::after {
-    content: " \2192";
-    opacity: 0;
-    /* transition: opacity 0.2s; */
-}
-
-
-.button:hover::after {
-    /* content: " \27f6"; */
-    opacity: 1;
-}
 /* responsive layout */
 @media(min-width: 900px) {
     .container {
