@@ -29,7 +29,7 @@ article {
 }
 
 blockquote {
-    border-left: 2px solid #2196f380;
+    border-left: 2px solid #66D7D1;
     padding: 0.5rem;
     font-size: 1.1em;
 }
@@ -86,7 +86,7 @@ blockquote {
 #bio-icon {
     width: 100%;
     border-radius: 50%;
-    border: 6px solid #2196f380;
+    border: 6px solid #66D7D1;
 }
 
 /* responsive layout */
@@ -110,6 +110,7 @@ blockquote {
     #bio {
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 5rem;
     }
 
     #bio-icon {

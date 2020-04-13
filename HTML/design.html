@@ -8,24 +8,95 @@
         <title>Design system</title>
     </head>
     <body>
-        <div class="design-container">
+        <div class="container">
             <header class="box">
                 <h1 class="header-title">Personal blog</h1>
                 <h2 class="header-subtitle">A blog about stuff</h2>
             </header>
             <nav class="box">
-                <a href="html/blog-post.html" class="nav-link">Latest Post</a>
-                <a href="html/blog-post.html" class="nav-link">About</a>
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="blog-post.html" class="nav-link">Latest Post</a>
                 <div class="nav-sidebar">
                     <h2 class="sidebar-header">Latest Posts</h2>
                     <ul class="sidebar-list">
-                        <li class="sidebar-list-item"><a href="HTML/blog-post.html">Ut aliquam sollicitudin leo</a></li>
-                        <li class="sidebar-list-item"><a href="html/blog-post.html">Cras ornare tristique elit</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Ut aliquam sollicitudin leo</a></li>
+                        <li class="sidebar-list-item"><a href="blog-post.html">Cras ornare tristique elit</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="design-main">
+            <div class="design-main blog-post">
                 <h2>Design System</h2>
+                <h3>Colors</h3>
+                <div class="design-colors design">
+                    <figure class="color-light">
+                        <div class="color-circle" id="color-light" alt=""></div>
+                        <figcaption>Isabelline <span class="color-hex" id="hex-background">#F0F0F0</span></figcaption>
+                        <p>Used as a background color.</p>
+                    </figure>
+                    <figure class="color-1">
+                        <div class="color-circle" id="main-color" alt="Color heliotrope magenta"></div>
+                        <figcaption>Heliotrope Magenta <span class="color-hex" id="hex-purple">#A0A</span></figcaption>
+                        <p>Used as the primary highlight color for buttons and links.</p>
+                    </figure>
+                    <figure class="color-2">
+                        <div class="color-circle" id="color-2" alt=""></div>
+                        <figcaption>Medium Turquoise <span class="color-hex" id="hex-blue">#66D7D1</span></figcaption>
+                        <p>Secondary highlight color for buttons, also used in blockquotes.</p>
+                    </figure>
+                </div>   
+                <h3>Font and Text</h3>   
+                <div class="design design-font"> 
+                    <p>Font-family: Lato</p>
+                    <p>Font-weight: 16px</p>
+                    <h1>H1 Header</h1> 
+                    <h2>H2 Header</h2> 
+                    <h3>H3 Header</h3> 
+                </div>
+                <h3>Components</h3>
+                <div class="design design-components">
+                    <h4>Links</h4>
+                    <p>Navigation links in the header/sidebar are always in all caps without text decoration. On hovering, it will turn into 'heliotrope magenta' and will be underlined. Example: <a href="#" class="nav-link">LINK</a></p>
+                </div>    
+                <h3>Buttons</h3>
+                <div class="design design-buttons">
+                    <div class="design-button">
+                        <h4 class="design-subheader">Regular button</h4>
+                        <a href="#" class="button">Read more &rarr;</a> 
+                        <code>
+                            .button { <br>
+                                <div class="code-block">
+                                    color: #A0A; <br>
+                                    border-radius: 8px; <br>
+                                    padding: 6px; <br>
+                                    font-weight: bold; <br>
+                                    text-transform: uppercase; <br>
+                                    cursor: pointer; <br>
+                                    border: 1px solid #A0A; <br>
+                                    font-size: 0.7em; <br>
+                                </div>
+                            }
+                        </code>
+                    </div>
+                    <div class="design-button">
+                        <h4 class="design-subheader">Active button</h4>
+                        <a href="#" class="button btn-active">Read more &rarr;</a> 
+                    </div> 
+                </div>
+                <h3>Boxes</h3>
+                <div class="design design-boxes">
+                    <div class="blog-post">
+                        <h4>This is a standard box for a blog post or page</h4>
+                    </div>
+                    <code>
+                        .blog-post { <br>
+                            <div class="code-block">
+                                padding: 1rem; <br>
+                                box-shadow: 2px 2px 6px grey; <br>
+                            </div>
+                        }
+                    </code>
+                    <p>The blog cards on the homepage are the same as this regular box, but they change when hovering over them.</p>
+                </div>
             </div>
             <footer class="box">
                 Made with ♥ by Eline Jacobse

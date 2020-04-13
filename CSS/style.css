@@ -1,5 +1,6 @@
 @import url(blog-post.css);
 @import url(typography.css);
+@import url(design.css);
 
 body {
     margin: 0;
@@ -40,9 +41,6 @@ header {
 .header-title {
     text-transform: uppercase;
     font-weight: lighter;
-    /* border: 1px solid #aa00aa; */
-    /* padding: 1rem; */
-    /* color: #a0a; */
 }
 
 .header-subtitle {
@@ -76,6 +74,12 @@ nav {
 
 .sidebar-list-item {
     margin-left: -2.5rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
 }
 
 footer {
@@ -134,14 +138,15 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    color: #a0a;
-    border: 1px solid #a0a;
+    color: #A0A;
+    border: 1px solid #A0A;
     border-radius: 8px;
     font-size: 0.7em;
 }
 
-.button:hover {
+.btn-active, .button:hover {
     box-shadow: 2px 2px 2px #66D7D1;
+    text-decoration: none;
     /* padding-right: 10px; */
 }
 
@@ -176,9 +181,9 @@ footer {
         display: block;
     }
 
-    .sidebar-header  {
+    /* .sidebar-header  {
         border-bottom: 1px solid;
-    }
+    } */
 
     .sidebar-list-item {
         border-bottom: 1px dotted grey;

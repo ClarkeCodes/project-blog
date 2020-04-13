@@ -3,7 +3,11 @@
 
 A mobile-first personal blog website designed and built from scratch using HTML and CSS. Layouts are made with CSS grid along with flexbox.
 
+### Live link
 
+[ TBA ]
+
+### Preview
 
 ### References 
 In addition to the Udacity course materials, I got helpful tips for creating this website from the following articles and resources: 
