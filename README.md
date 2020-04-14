@@ -5,9 +5,18 @@ A mobile-first personal blog website designed and built from scratch using HTML 
 
 ### Live link
 
-[ TBA ]
+The following pages are active:
+- [Homepage](https://elinej.github.io/project-blog/index.html)
+- [Blog page](https://elinej.github.io/project-blog/pages/blog-post.html)
+- [Design System](https://elinej.github.io/project-blog/pages/design.html)
 
 ### Preview
+
+#### Desktop homepage
+![](img/desktop-home.png)
+
+#### Mobile homepage 
+![](img/mobile-home.png)
 
 ### References 
 In addition to the Udacity course materials, I got helpful tips for creating this website from the following articles and resources: 
