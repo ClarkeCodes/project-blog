@@ -89,6 +89,12 @@ blockquote {
     border: 6px solid #66D7D1;
 }
 
+.sidebar-pages {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 /* responsive layout */
 @media(min-width: 900px) {
     .blog-container {
@@ -105,6 +111,11 @@ blockquote {
     blockquote {
         padding: 1rem;
         font-size: 1.2em;
+    }
+
+    .sidebar-pages {
+        display: block;
+        width: auto;
     }
 
     #bio {
