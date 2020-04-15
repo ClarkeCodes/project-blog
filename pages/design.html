@@ -10,13 +10,12 @@
     <body>
         <div class="container">
             <header class="box">
-                <h1 class="header-title">Personal blog</h1>
+                <h1 class="header-title">Personal Blog</h1>
                 <h2 class="header-subtitle">A blog about stuff</h2>
             </header>
-            <nav class="box">
+            <nav class="box sidebar">
                 <div class="sidebar-pages">
                     <a href="../index.html" class="nav-link">Home</a>
-                    <a href="blog-post.html" class="nav-link">Latest Post</a>
                 </div>
                 <div class="nav-sidebar">
                     <h2 class="sidebar-header">Latest Posts</h2>
@@ -32,19 +31,19 @@
                 <h3>Colors</h3>
                 <div class="design-colors design">
                     <figure class="color-light color-box">
-                        <div class="color-circle" id="color-light" alt=""></div>
+                        <div class="color-circle" id="color-background" alt="Color isabelline"></div>
                         <figcaption>Isabelline <span class="color-hex" id="hex-background">#F0F0F0</span></figcaption>
-                        <p>Used as a background color.</p>
+                        <p>Used as a light background color for the main pages.</p>
                     </figure>
                     <figure class="color-1 color-box">
-                        <div class="color-circle" id="main-color" alt="Color heliotrope magenta"></div>
+                        <div class="color-circle" id="color-purple" alt="Color heliotrope magenta"></div>
                         <figcaption>Heliotrope Magenta <span class="color-hex" id="hex-purple">#A0A</span></figcaption>
                         <p>Used as the primary highlight color for buttons and links.</p>
                     </figure>
                     <figure class="color-2 color-box">
-                        <div class="color-circle" id="color-2" alt=""></div>
+                        <div class="color-circle" id="color-blue" alt="Color Medium Turquoise"></div>
                         <figcaption>Medium Turquoise <span class="color-hex" id="hex-blue">#66D7D1</span></figcaption>
-                        <p>Secondary highlight color for buttons, also used in blockquotes.</p>
+                        <p>Secondary highlight color for buttons and used for blockquotes.</p>
                     </figure>
                 </div>   
                 <h3>Font and Text</h3>   
@@ -61,10 +60,10 @@
                 </div>
                 <h3>Links</h3>
                 <div class="design design-links">
-                    <h4>Navigation links</h4>
+                    <h4 class="link-subheader">Navigation links</h4>
                     <a href="#" class="nav-link">LINK STANDARD</a><br>
                     <a href="#" class="nav-link active">LINK ACTIVE</a>
-                    <h4>Inline text links</h4>
+                    <h4 class="link-subheader"> Inline text links</h4>
                     An example of a <a href="#" class="active">link</a> inside text.
                 </div>    
                 <h3>Buttons</h3>
@@ -90,6 +89,13 @@
                     <div class="design-button">
                         <h4 class="design-subheader">Active button</h4>
                         <a href="#" class="button btn-active">Read more &rarr;</a> 
+                        <code>
+                            .button:hover { <br>
+                            <div class="code-block">
+                                box-shadow: 2px 2px 2px #66D7D1; <br>
+                            </div>
+                        }
+                        </code>
                     </div> 
                 </div>
                 <h3>Boxes</h3>
@@ -105,11 +111,11 @@
                             </div>
                         }
                     </code>
-                    <p>The blog cards on the homepage are the same as this regular box, but they change when hovering over them.</p>
+                    <p>The blog cards on the homepage are the same as this regular box, but when hovering over them, the shadow expands slightly: <code>box-shadow: 2px 2px 6px 2px grey;</code></p>
                 </div>
             </div>
             <footer class="box">
-                Made with ♥ by Eline Jacobse
+                Made with <span class="heart">♥</span> by <a href="https://github.com/ElineJ">Eline Jacobse</a>
             </footer>
         </div>
     </body>

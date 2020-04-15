@@ -1,16 +1,3 @@
-.blog-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 2px 2px 6px grey;
-    margin: 1rem;
-}
-
-.blog-post-img {
-    width: 80%;
-}
-
 .blog-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -24,6 +11,20 @@
         "ft ft";
 }
 
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px grey;
+    margin: 1rem;
+}
+
+.blog-post-img {
+    width: 80%;
+}
+
 article {
     grid-area: main;
 }
@@ -34,12 +35,9 @@ blockquote {
     font-size: 1.1em;
 }
 
-.blog-post {
-    background: white;
-}
-
 .blog-intro {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 #share {
@@ -68,31 +66,27 @@ blockquote {
 #bio {
     grid-area: bio;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
     padding: 1rem;
     justify-content: space-between;
 }
 
 .bio-image-container {
+    display: flex;
+    justify-content: center;
     margin: auto 0;
-    max-width: 30%;
+    max-width: 100%;
 }
 
 .bio-description {
-    max-width: 65%;
+    max-width: 100%;
 }
 
 #bio-icon {
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
     border: 6px solid #66D7D1;
-}
-
-.sidebar-pages {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
 }
 
 /* responsive layout */
@@ -113,24 +107,27 @@ blockquote {
         font-size: 1.2em;
     }
 
-    .sidebar-pages {
-        display: block;
-        width: auto;
+    .sidebar {
+        max-width: 80%;
     }
 
     #bio {
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 5rem;
-    }
-
-    #bio-icon {
         max-width: 80%;
     }
 
+    #bio-icon {
+        max-width: 70%;
+    }
+
     .bio-image-container {
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
         max-width: 100%;
+
     }
 
     .bio-description {
