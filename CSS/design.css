@@ -1,7 +1,18 @@
+/* content  */
 .design-main {
     grid-area: main;
 }
 
+.design {
+    width: 100%;
+}
+
+.design-subheader {
+    padding: 1rem 0;
+}
+
+
+/* section: colors */
 .design-colors {
     display: flex;
     flex-direction: column;
@@ -19,11 +30,11 @@
 }
 
 #color-purple{
-    background-color: #A0A;
+    background-color: #a0a;
 }
 
 #color-blue {
-    background-color: #66D7D1;
+    background-color: #66d7d1;
 }
 
 #color-background {
@@ -35,7 +46,7 @@
 }
 
 #hex-purple:hover {
-    background-color: #A0A;
+    background-color: #a0a;
     color: white;
 }
 
@@ -46,17 +57,15 @@
 
 #hex-blue:hover {
     color: white;
-    background-color: #66D7D1;
+    background-color: #66d7d1;
 }
 
 figcaption {
     text-align: center;
 }
 
-.design {
-    width: 100%;
-}
 
+/* code blocks */
 code {
     display: block;
     padding: 1rem;
@@ -68,14 +77,8 @@ code {
     padding-left: 1.5rem;
 }
 
-.design-subheader {
-    padding: 1rem 0;
-}
 
-.link-subheader {
-    margin: 1rem 0;
-}
-
+/* responsive layout  */
 @media (min-width: 900px) {
     .design-colors {
         flex-direction: row;

@@ -2,15 +2,17 @@
 @import url(typography.css);
 @import url(design.css);
 
+
+/* global styles and page layout */
 body {
     margin: 0;
     background: #f0f0f0;
-    color: #0F0F0F;
+    color: #0f0f0f;
 }
 
 a {
     text-decoration: none;
-    color: #0F0F0F;
+    color: #0f0f0f;
 }
 
 a.active, a:hover{
@@ -30,6 +32,8 @@ a.active, a:hover{
     justify-content: center;
 }
 
+
+/* header */
 header {
     grid-area: hd;
     display: flex;
@@ -48,6 +52,8 @@ header {
     font-size: 1.2em;
 }
 
+
+/* navigation & sidebar */
 nav {
     grid-area: nav;
     display: flex;
@@ -72,7 +78,7 @@ nav {
 .nav-link {
     text-transform: uppercase;
     text-decoration: none;
-    color: #0F0F0F;
+    color: #0f0f0f;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -89,18 +95,8 @@ nav {
     margin-left: -2.5rem;
 }
 
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-}
 
-footer {
-    grid-area: ft;
-    text-align: center;
-}
-
-/* blog cards/content layout */
+/* content  */
 #main {
     grid-area: main;
     display: grid;
@@ -143,25 +139,35 @@ footer {
     box-shadow: 2px 2px 6px 2px grey;
 }
 
+
+/* button styles  */
 .button {
     padding: 6px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    color: #A0A;
-    border: 1px solid #A0A;
+    color: #a0a;
+    border: 1px solid #a0a;
     border-radius: 8px;
     font-size: 0.7em;
 }
 
 .btn-active, .button:hover {
-    box-shadow: 2px 2px 2px #66D7D1;
+    box-shadow: 2px 2px 2px #66d7d1;
     text-decoration: none;
 }
 
-.heart {
-    color: #A0A;
+
+/* footer  */
+footer {
+    grid-area: ft;
+    text-align: center;
 }
+
+.heart {
+    color: #a0a;
+}
+
 
 /* responsive layout */
 @media(min-width: 900px) {
@@ -178,6 +184,8 @@ footer {
         grid-template-rows: 50% 50%;
     }
 
+
+    /* navigation and sidebar */
     nav {
         flex-direction: column;
         justify-content: flex-start;
@@ -211,6 +219,8 @@ footer {
         border-bottom: 1px dotted grey;
     }
 
+
+    /* content */
     .blog-card {
         flex-direction: row;
         margin: 3rem;
@@ -218,7 +228,6 @@ footer {
     }
 
     .blog-card-text {
-        padding: 15px;
         padding: 2rem;
     }
 

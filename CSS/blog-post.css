@@ -11,6 +11,12 @@
         "ft ft";
 }
 
+
+/* blog content */
+article {
+    grid-area: main;
+}
+
 .blog-post {
     display: flex;
     flex-direction: column;
@@ -25,21 +31,19 @@
     width: 80%;
 }
 
-article {
-    grid-area: main;
-}
-
-blockquote {
-    border-left: 2px solid #66D7D1;
-    padding: 0.5rem;
-    font-size: 1.1em;
-}
-
 .blog-intro {
     font-weight: bold;
     font-size: 1.1em;
 }
 
+blockquote {
+    border-left: 2px solid #66d7d1;
+    padding: 0.5rem;
+    font-size: 1.1em;
+}
+
+
+/* social */
 #share {
     grid-area: share;
     display: flex;
@@ -63,6 +67,8 @@ blockquote {
     filter: opacity(1);
 }
 
+
+/* bio section */
 #bio {
     grid-area: bio;
     display: flex;
@@ -86,8 +92,9 @@ blockquote {
 #bio-icon {
     width: 50%;
     border-radius: 50%;
-    border: 6px solid #66D7D1;
+    border: 6px solid #66d7d1;
 }
+
 
 /* responsive layout */
 @media(min-width: 900px) {
@@ -102,17 +109,25 @@ blockquote {
             "ft ft ft ft ft ft ft ft";
     }
 
-    blockquote {
-        padding: 1rem;
-        font-size: 1.2em;
+    
+    /* content */
+    .blog-post {
+        margin: 2rem;
+        padding: 2rem;
     }
 
     .sidebar {
         max-width: 80%;
     }
 
+    blockquote {
+        padding: 1rem;
+        font-size: 1.2em;
+    }
+
+
+    /* bio section */
     #bio {
-        flex-direction: column;
         justify-content: flex-start;
         padding-top: 5rem;
         max-width: 80%;
@@ -132,10 +147,5 @@ blockquote {
 
     .bio-description {
         max-width: 100%;
-    }
-
-    .blog-post {
-        margin: 2rem;
-        padding: 2rem;
     }
 }
