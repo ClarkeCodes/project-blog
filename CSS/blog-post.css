@@ -100,12 +100,12 @@ blockquote {
 @media(min-width: 900px) {
     .blog-container {
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 100px, 1fr, 1fr, min-content, 50px;
+        grid-template-rows: 100px 1fr 1fr 1fr 50px;
         grid-template-areas: 
             "hd hd hd hd hd hd hd hd"
             "main main main main main main nav nav"
             "main main main main main main bio bio"
-            "share share share share share share share share"
+            "main main main main main main share share"
             "ft ft ft ft ft ft ft ft";
     }
 
@@ -131,6 +131,9 @@ blockquote {
         justify-content: flex-start;
         padding-top: 5rem;
         max-width: 80%;
+        grid-row-start: 2;
+        margin-top: 3rem;
+        z-index: -1;
     }
 
     #bio-icon {
@@ -147,5 +150,12 @@ blockquote {
 
     .bio-description {
         max-width: 100%;
+    }
+
+
+    /* social */
+    #share {
+        grid-row-start: 2;
+        width: 80%;
     }
 }
